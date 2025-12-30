@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import { ChefHat, Settings } from 'lucide-react';
-import { ApiKeyModal } from './ApiKeyModal';
-import { useRecipe } from '../context/RecipeContext';
+import { ApiKeyModal } from './components/ApiKeyModal';
+import { useRecipe } from './context/RecipeContext';
 
 export function Header() {
   const [showApiModal, setShowApiModal] = useState(false);

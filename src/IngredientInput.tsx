@@ -1,8 +1,8 @@
 import React, { useState, useRef, useEffect } from 'react';
 import { Plus, X, Search } from 'lucide-react';
 import { useRecipe } from '../context/RecipeContext';
-import { useRecipeSearch } from '../hooks/useRecipeSearch';
-import { LoadingSpinner } from './common/LoadingSpinner';
+import { useRecipeSearch } from './hooks/useRecipeSearch';
+import { LoadingSpinner } from './components/common/LoadingSpinner';
 
 export function IngredientInput() {
   const { state, dispatch } = useRecipe();

@@ -1,9 +1,9 @@
 import React, { useEffect } from 'react';
-import { RecipeCard } from './RecipeCard';
-import { LoadingSpinner } from './common/LoadingSpinner';
-import { ErrorMessage } from './common/ErrorMessage';
+import { RecipeCard } from './components/RecipeCard';
+import { LoadingSpinner } from './components/common/LoadingSpinner';
+import { ErrorMessage } from './components/common/ErrorMessage';
 import { useRecipe } from '../context/RecipeContext';
-import { useRecipeSearch } from '../hooks/useRecipeSearch';
+import { useRecipeSearch } from './hooks/useRecipeSearch';
 import { ChefHat, Search } from 'lucide-react';
 
 export function RecipeGrid() {
