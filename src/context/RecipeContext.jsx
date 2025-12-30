@@ -1,4 +1,5 @@
-import React, { createContext, useContext, useReducer } from 'react';
+import React, { createContext, useContext, useReducer, useEffect } from 'react';
+import { spoonacularService } from '../services/spoonacular';
 
 const initialState = {
   ingredients: [],
@@ -14,7 +15,7 @@ const initialState = {
     minCalories: 0,
     maxCalories: 2000,
   },
-  apiKey: '',
+  apiKey: '0ae42cf457a24eaf98a8463abcd0e94f',
 };
 
 function recipeReducer(state, action) {
@@ -79,6 +80,13 @@ const RecipeContext = createContext(null);
 
 export function RecipeProvider({ children }) {
   const [state, dispatch] = useReducer(recipeReducer, initialState);
+
+  // Keep the shared spoonacular service in sync with the context API key
+  useEffect(() => {
+    if (state.apiKey && typeof spoonacularService?.setApiKey === 'function') {
+      spoonacularService.setApiKey(state.apiKey);
+    }
+  }, [state.apiKey]);
 
   return (
     <RecipeContext.Provider value={{ state, dispatch }}>

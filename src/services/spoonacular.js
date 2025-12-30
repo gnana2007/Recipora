@@ -1,4 +1,4 @@
-const API_KEY = 'YOUR_SPOONACULAR_API_KEY'; // Users need to add their API key
+const API_KEY = '0ae42cf457a24eaf98a8463abcd0e94f'; // Users need to add their API key
 const BASE_URL = 'https://api.spoonacular.com';
 
 export class SpoonacularService {
