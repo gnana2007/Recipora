@@ -9,8 +9,8 @@ export function Header() {
         <div className="flex items-center gap-3">
           <ChefHat className="w-8 h-8 text-orange-500" />
           <div>
-            <h1 className="text-2xl font-bold text-gray-900">RecipeAI</h1>
-            <p className="text-sm text-gray-500">Powered by Spoonacular</p>
+            <h1 className="text-2xl font-bold text-gray-900">Recipora</h1>
+            {/* <p className="text-sm text-gray-500">Powered by Spoonacular</p> */}
           </div>
         </div>
       </div>
