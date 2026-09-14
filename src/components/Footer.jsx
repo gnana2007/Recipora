@@ -10,7 +10,6 @@ export function Footer() {
             <h3 className="font-bold text-lg mb-4">RecipeAI</h3>
             <p className="text-gray-300 leading-relaxed">
               Discover amazing recipes with the ingredients you already have. 
-              Powered by Spoonacular's comprehensive recipe database.
             </p>
           </div>
 
@@ -24,7 +23,7 @@ export function Footer() {
             </ul>
           </div>
 
-          <div>
+          {/* <div>
             <h4 className="font-semibold mb-4">Powered By</h4>
             <a
               href="https://spoonacular.com/food-api"
@@ -38,13 +37,13 @@ export function Footer() {
             <p className="text-gray-400 text-sm mt-2">
               Get your free API key to start discovering recipes
             </p>
-          </div>
+          </div> */}
         </div>
 
         <div className="border-t border-gray-800 mt-8 pt-8 flex flex-col sm:flex-row items-center justify-between">
-          <p className="text-gray-400 text-sm">
+          {/* <p className="text-gray-400 text-sm">
             © 2025 RecipeAI. Built with React and modern web technologies.
-          </p>
+          </p> */}
           <div className="flex items-center gap-1 text-gray-400 text-sm mt-4 sm:mt-0">
             Made with <Heart className="w-4 h-4 text-red-500" /> for food lovers
           </div>
