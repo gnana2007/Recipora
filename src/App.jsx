@@ -11,14 +11,14 @@ import { ApiKeyModal } from './components/ApiKeyModal';
 function AppContent() {
   const [showWelcomeModal, setShowWelcomeModal] = useState(false);
 
-  useEffect(() => {
-    // Show welcome modal on first visit
-    const hasVisited = localStorage.getItem('recipeai-visited');
-    if (!hasVisited) {
-      setShowWelcomeModal(true);
-      localStorage.setItem('recipeai-visited', 'true');
-    }
-  }, []);
+  // useEffect(() => {
+  //   // Show welcome modal on first visit
+  //   const hasVisited = localStorage.getItem('recipeai-visited');
+  //   if (!hasVisited) {
+  //     setShowWelcomeModal(true);
+  //     localStorage.setItem('recipeai-visited', 'true');
+  //   }
+  // }, []);
 
   return (
     <div className="min-h-screen bg-gray-50 flex flex-col">
