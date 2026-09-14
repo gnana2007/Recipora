@@ -22,7 +22,7 @@ export function Hero() {
           <div className="flex justify-center items-center gap-3 mb-6">
             <ChefHat className="w-12 h-12 text-white drop-shadow-lg" />
             <h1 className="text-4xl sm:text-5xl lg:text-6xl font-bold text-white drop-shadow-lg">
-              RecipeAI
+              Recipora
             </h1>
           </div>
           
@@ -32,7 +32,7 @@ export function Hero() {
           
           <p className="text-lg sm:text-xl text-white/90 max-w-2xl mx-auto mb-8 drop-shadow">
             Transform your available ingredients into delicious meals. Get personalized recipe suggestions,
-            cooking instructions, and nutritional information powered by AI.
+            cooking instructions, and nutritional information.
           </p>
           
           <div className="flex flex-wrap justify-center gap-4 text-sm text-white/80">
